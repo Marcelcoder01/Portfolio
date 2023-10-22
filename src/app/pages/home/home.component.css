@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Righteous&family=Tilt+Neon&family=Titillium+Web&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Titillium Web', sans-serif;
+  ;
+
+
+}
+
+body{
+  background-color: black;
+}
+
+
+.inicio{
+  background: linear-gradient(to top, rgba(30, 35, 38,.8), rgba(30, 35, 38, 1)),
+  url("../../../assets/img/verdetop.jpg");
+  background-size: cover;
+  height:100vh;
+  color:#ffff;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+  border: 3px solid red; */
+}
+
+.inicio .contenedor-banner{
+  padding: 20px;
+
+  background-color: rgba(18, 18, 18, 0.836);
+  max-width: 350px;
+  margin:auto;
+  text-align: center;
+  border-radius: 40px;
+  transition:.5s;
+
+}
+
+.inicio .contenedor-banner:hover{
+  border: 1px solid rgb(27, 137, 27);
+  border-radius: 70px;
+}
+.inicio .contenedor-banner img{
+  margin-top: 40px;
+  border:5px solid rgb(58, 188, 58);
+  display:block;
+  width: 80%;
+  margin:auto;
+  border-radius: 100%;
+}
+
+.inicio .contenedor-banner h1{
+  margin-top: 20px;
+  font-size: 42px;
+  /* font-family: 'Righteous'; */
+}
+
+.inicio .contenedor-banner h2{
+ font-weight: normal;
+  font-size: 15px;
+  /* font-family: 'Righteous'; */
+}
+
+.redes a{
+  color: #ffff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(58, 188, 58);
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin:40px 5px;
+  font-size: 20px;
+  transition: .3s;
+
+}
+
+.redes a:hover{
+  border: 1px solid white;
+}
+
+
+.texto-about{
+  /* border:3px solid red; */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+.texto-about p{
+
+  /* border: 3px solid green; */
+  margin-top: 80px;
+  text-align: center;
+}
+
+.text-big{
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+.text-small{
+  font-size: 17px;
+  padding-top: -50px;
+}
+.text-small2{
+  font-size: 22px;
+  padding-top: -50px;
+}
+
+.icons-skills{
+  /* border:3px solid blue; */
+  height: 200px;
+  margin-top:50px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+
+}
+
+.icons-skills i{
+  /* border:3px solid green; */
+  font-size: 60px;
+  transition: .5s;
+  position: relative;
+
+}
+
+.icons-skills i:hover{
+  /* border:3px solid green; */
+  font-size: 100px;
+
+}
+
+
+.icon-description {
+  display: none;
+  position: absolute;
+  bottom: 50px; /* Ajusta la posición vertical según tus preferencias */
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: max-content;
+  text-align: center;
+}
+
+.icons-skills i:hover + .icon-description {
+  display: block;
+}
+
+
+.skills, .skills2 {
+  margin-bottom: 10px; /* Ajusta el espacio entre los elementos */
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  align-items: center; /* Para centrar el contenido horizontalmente */
+  width: 100%;
+  border-radius: 10px;
+  /* Asegura que ocupen todo el ancho disponible */
+ /* Bordes opcionales para el contenedor */
+}
+
+.skills__bar-container, .skills__bar-container2 {
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  position: relative;
+  height: 20px;
+  border-radius: 10px;
+  /* border: 3px solid green; */
+}
+
+.skills__bar, .skills__bar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 10px;
+
+  /* border: 3px solid purple; */
+}
+

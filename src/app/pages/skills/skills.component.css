@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Righteous&family=Tilt+Neon&family=Titillium+Web&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+body{
+  background-color: black;
+}
+
+
+.inicio{
+  background: linear-gradient(to top, rgba(30, 35, 38,.8), rgba(30, 35, 38, 1)),
+  url("../../../assets/img/verdetop.jpg");
+  background-size: cover;
+  min-height:100vh;
+  color:#ffff;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 3px solid red; */
+  flex-direction: column;
+}
+
+
+.titulo{
+  height: 60px;
+  margin-top: 20px;
+
+}
+
+.mensaje{
+  font-size: smaller;
+  padding-left: 60px;
+}
+
+
+
+
+.skill__1{
+  /* border: 2px solid yellow; */
+  width: 100%;
+  height:50px;
+  padding-left: 300px;
+  margin-top: 40px;
+  transition: 1s;
+}
+
+
+
+
+.skill__1 i{
+  font-size: 50px;
+  cursor: pointer;
+
+
+}
+
+.skill__1 span{
+  font-size: 30px;
+  margin-left: 15px;
+
+
+}
+
+.skill__1:hover{
+  margin-left: 200px;
+  color: rgb(55, 226, 55);
+
+
+}
+
+
+.description{
+  opacity: 0;
+  width: 100%;
+  padding-left: 80px;
+  margin-top: 20px;
+  padding-right: 80px;
+  transition: opacity 0.5s;
+  display: none; /* Ocultar la descripción */
+
+
+
+}
+
+
+
+
+.skill__2{
+  /* border: 2px solid yellow; */
+  width: 100%;
+  height:50px;
+  padding-right: 300px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: end;
+  transition: 1s;
+
+
+}
+
+.skill__2:hover{
+  margin-right: 200px;
+  color: rgb(55, 226, 55);
+
+
+}
+
+.skill__2 i{
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.skill__2 span{
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill__1:hover + .description,
+.skill__2:hover + .description {
+  animation: fade-in 0.5s forwards;
+  display: block; /* Mostrar la descripción al hacer hover */
+
+}
+
+
+

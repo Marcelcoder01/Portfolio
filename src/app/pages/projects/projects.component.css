@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Righteous&family=Tilt+Neon&family=Titillium+Web&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+body{
+  background-color: black;
+}
+
+
+.inicio{
+  background: linear-gradient(to top, rgba(30, 35, 38,.8), rgba(30, 35, 38, 1)),
+  url("../../../assets/img/verdetop.jpg");
+  background-size: cover;
+  min-height:100vh;
+  color:#ffff;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 3px solid red; */
+  flex-direction: column;
+}
+
+.titulo{
+  height: 60px;
+  margin-top: 20px;
+
+}
+
+.inicio .contenedor-banner{
+  padding: 20px;
+  background-color: rgba(18, 18, 18, 0.836);
+  max-width: 350px;
+  /* margin-right: 600px; */
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 40px;
+  transition:.5s;
+  height:300px;
+
+}
+
+.inicio .contenedor-banner:hover{
+  border: 1px solid rgb(27, 137, 27);
+  border-radius: 70px;
+}
+.inicio .contenedor-banner img{
+  margin-top: 40px;
+  /* border:1px solid rgb(58, 188, 58); */
+  display:block;
+  width: 80%;
+  margin:auto;
+  transition: .5s;
+  /* border-radius: 100%; */
+}
+
+.inicio .contenedor-banner img:hover{
+  /* border: 1px solid rgb(27, 137, 27); */
+  cursor: pointer;
+
+}
+
+.inicio .contenedor-banner h1{
+  margin-top: 20px;
+  font-size: 35px;
+  /* font-family: 'Righteous'; */
+}
+
+.inicio .contenedor-banner h2{
+ font-weight: normal;
+  font-size: 15px;
+  /* font-family: 'Righteous'; */
+}
+
+.boton a{
+  text-decoration: none;
+  color:rgb(58, 188, 58);
+}
+
+.contenedores{
+  display: flex;
+  /* border: 3px solid salmon; */
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+
+.contenedores2{
+  display: flex;
+  /* border: 3px solid salmon; */
+  justify-content: space-evenly;
+  width: 100%;
+
+}
