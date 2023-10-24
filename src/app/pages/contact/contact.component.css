@@ -93,3 +93,28 @@ body{
 .info h1{
   font-size: 30px;
 }
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .titulo p{
+    display:none;
+  }
+
+  .redes a {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .redes__description span {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .info h1 {
+    font-size: 20px;
+  }
+}

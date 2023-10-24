@@ -73,3 +73,14 @@ body header{
   font-size: larger;
 
 }
+
+@media (max-width: 768px) {
+  .div_a {
+    margin-left: 20px; /* Reduce el margen izquierdo en pantallas más pequeñas */
+    width: auto; /* Permite que el ancho sea determinado por el contenido */
+  }
+
+  .div_a a {
+    font-size: 14px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+  }
+}

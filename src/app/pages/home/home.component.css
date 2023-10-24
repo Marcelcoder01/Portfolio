@@ -195,3 +195,57 @@ body{
   /* border: 3px solid purple; */
 }
 
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .inicio .contenedor-banner {
+    max-width: 90%;
+  }
+  .inicio .contenedor-banner h1 {
+    font-size: 32px;
+  }
+  .inicio .contenedor-banner h2 {
+    font-size: 14px;
+  }
+  .icons-skills i,
+  .icon-description {
+    display: none;
+  }
+
+  .text-big {
+    font-size: 20px;
+  }
+
+  .text-small {
+    font-size: 14px;
+  }
+
+  .text-small2 {
+    display:none;
+  }
+}
+
+
+@media (max-width: 414px) {
+  .text-big {
+    font-size: 16px;
+  }
+
+  .text-small {
+    font-size: 13px;  }
+
+  .text-small2 {
+    display: none;
+  }
+
+  .inicio .contenedor-banner {
+    max-width: 50%;
+    /* border: 3px solid red; */
+    margin-left: 20px;
+  }
+  .inicio .contenedor-banner h1 {
+    font-size: 22px;
+  }
+  .inicio .contenedor-banner h2 {
+    font-size: 8px;
+  }
+}
