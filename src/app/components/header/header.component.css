@@ -81,7 +81,10 @@ body header{
   }
 
   .div_a a {
-    font-size: 14px;
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+
   }
 
   .div_logoHeader img {

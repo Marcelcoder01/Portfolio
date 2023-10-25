@@ -139,5 +139,51 @@ body{
 
 }
 
+@media (max-width: 768px){
+  .skill__1 i{
+    font-size: 30px;
+    /* border: 2px solid red; */
+  }
+
+  .skill__1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* border: 2px solid blue; */
+
+  }
+
+  .skill__1 span{
+    font-size: 20px;
+    /* border: 3px solid purple; */
+  }
+
+  .skill__2{
+    display: flex;
+    justify-content: flex-start;
+    /* border: 2px solid green; */
+
+  }
+
+  .skill__2 span{
+    font-size: 20px;
+    /* border: 3px solid purple; */
+  }
+
+  .skill__2 i{
+    font-size: 30px;
+    /* border: 2px solid red; */
+  }
+
+  .description{
+    font-size: 10px;
+  }
+
+  .mensaje{
+    display: none;
+  }
+}
+
+
 
 
