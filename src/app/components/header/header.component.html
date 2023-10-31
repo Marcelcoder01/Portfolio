@@ -7,7 +7,11 @@
                 <img class="img_logo" src="/assets/img/logo4.png" alt="">
               <div class="div_a">
                   <a routerLink="home">Home</a>
-                  <a href="https://drive.google.com/file/d/1wFRo47p6Owsq8GmT_urYPv6XZJSr-UEn/view?usp=sharing">Mi CV</a>
+                  <select [(ngModel)]="selectedCV" (change)="redirectToCV()" name="CV" id="CV">
+                    <option selected disabled>Mi CV</option>
+                    <option value="español" [attr.data-url]="espanolURL"><a href="https://drive.google.com/file/d/1wFRo47p6Owsq8GmT_urYPv6XZJSr-UEn/view?usp=sharing">Español</a></option>
+                    <option value="english" [attr.data-url]="englishURL"><a href="https://drive.google.com/file/d/1GKtIWFt2K6sKTMMCWyxKOx9FjoUbzkWK/view?usp=sharing">English</a></option>
+                  </select>
                   <a routerLink="skills">Skills</a>
                   <a routerLink="projects">Proyectos</a>
                   <a routerLink="contact">Contacto</a>
