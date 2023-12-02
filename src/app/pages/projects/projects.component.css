@@ -41,8 +41,8 @@ body{
   margin-top: 40px;
   text-align: center;
   border-radius: 40px;
-  transition:.5s;
-  height:300px;
+  transition:.2s;
+  height:400px;
 
 }
 
@@ -56,7 +56,7 @@ body{
   display:block;
   width: 80%;
   margin:auto;
-  transition: .5s;
+  transition: .2s;
   /* border-radius: 100%; */
 }
 
@@ -85,16 +85,20 @@ body{
 
 .contenedores{
   display: flex;
-  /* border: 3px solid salmon; */
+  /* border: 3px solid salmon;   */
   justify-content: space-evenly;
   width: 100%;
-
 }
 
-.contenedores2{
+.icons{
+  /* border: 3px solid red; */
   display: flex;
-  /* border: 3px solid salmon; */
   justify-content: space-evenly;
-  width: 100%;
-
+  font-size: 33px;
+  margin-top: 20px;
 }
+
+
+
+
+
