@@ -28,12 +28,29 @@
   </div>
 
 </div>
+
+<div class="info">
+  <h2>Si eres tímid@ no pasa nada, rellena el formulario y te contactaré yo mismo</h2>
+</div>
+
+<div class="formulario">
+  <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" formControlName="name" required="">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email" required="">
+
+    <textarea placeholder="Escribe tu mensaje..." formControlName="text" id="texto" cols="30" rows="10"></textarea>
+
+    <button class="button">Enviar</button>
+  </form>
+</div>
 <div class="info">
   <h1>Información adicional</h1>
   <p>Soy ciudadano de la Unión Europea, por lo que tengo permiso para trabajar libremente en territorio europeo siempre y cuando cumpla
     con lo exigido en la legislación española en lo relativo a los trabajadores por cuenta ajena dentro y fuera del territorio español.
   </p>
-
 </div>
 
 </div>
