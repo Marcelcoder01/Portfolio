@@ -36,14 +36,20 @@
 <div class="formulario">
   <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
     <label for="name">Nombre</label>
-    <input type="text" id="name" formControlName="name" required="">
+    <input type="text" id="name" formControlName="name" required>
+    <span *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+      El nombre es obligatorio
+    </span>
 
     <label for="email">Email</label>
-    <input type="email" id="email" formControlName="email" required="">
+    <input type="email" id="email" formControlName="email" required>
+    <span *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+      El correo es obligatorio
+    </span>
 
     <textarea placeholder="Escribe tu mensaje..." formControlName="text" id="texto" cols="30" rows="10"></textarea>
 
-    <button class="button">Enviar</button>
+    <button class="button" [disabled]="contactForm.invalid">Enviar</button>
   </form>
 </div>
 <div class="info">

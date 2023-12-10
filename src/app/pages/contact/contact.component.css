@@ -112,6 +112,10 @@ body{
 
 .formulario form input{
   margin-top: 5px;
+  border-style:none;
+  box-shadow: 20px;
+  border-radius: 10px;
+  height: 30px;
 }
 
 .formulario form textarea{
@@ -125,6 +129,8 @@ body{
   align-self: center;
   margin-top: 10px;
   cursor: pointer;
+  border-style:none;
+  box-shadow: 3px;
 }
 
 .button:active{
